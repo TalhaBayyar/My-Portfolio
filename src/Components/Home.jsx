@@ -10,7 +10,8 @@ function Home() {
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
-      startDelay: 1000
+      startDelay: 1000,
+      showCursor: false,
     };
 
     const typed = new Typed(textRef.current, options);
@@ -21,56 +22,78 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <>
+      
       <div className='flex justify-start items-center max-w-screen-xl mx-auto mt-20'>
 
       
-        <div className="">
+        {/* <div className="">
           Talha Bayyar
-        </div>
+        </div> */}
         
       </div>
 
 
-      <div className='flex justify-center items-center max-w-screen-xl mx-auto m-2 p-2'>
+      <div className='flex justify-center items-center max-w-screen-xl mx-auto'>
 
       
-        <div className="">
-        <img src="/images/talha-bayyar.jpg" alt="" className="object-cover w-full h-full max-w-[402px] max-h-[432px] drop-shadow-md " />
-        
+        <div className="min-w-[252px] max-w-[252px] min-h-[282px] max-h-[282px] md:min-w-[402px] md:max-w-[402px] md:min-h-[432px] md:max-h-[432px]">
+          <img src="/images/talha-bayyar.jpg" alt="" className="object-cover drop-shadow-md" />
         </div>
-        <div className="fixed flex justify-center items-center mr-72">
-          <div className="flex justify-end text-2xl italiana animate-none" ref={textRef}>HI I'M</div>
-          <div className="flex items-center rounded-full border-2 w-28 h-28 sm:w-32 sm:h-32  text-2xl italiana animate-none" ref={textRef}></div>
+
+        <div className="mr-[225px] ms:mr-[215px] md:mr-[360px] xl:mr-[370px] fixed flex justify-center items-center italiana font-semibold text-2xl xl:text-4xl">
+          <div ref={textRef}>HI I'M</div>
+          <div className="flex items-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-[1px] border-x-slate-500 border-y-slate-500" ref={textRef}></div>
         </div> 
         
       </div>
 
 
 
-      <div className='flex justify-end items-center max-w-screen-xl mx-auto'>
+      <div className='flex justify-center sm:justify-end items-center max-w-screen-xl mx-auto border-4'>
 
 
-        <div className="flex justify-center items-center ">
-          <div className="mt-[20] sm:mt-[-200px]">
-            <div className="max-w-screen-lg sm:max-w-screen-lg md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-lg 2xl:max-w-screen-lg  mx-auto flex justify-center sm:justify-end md:justify-end lg:justify-end xl:justify-end 2xl:justify-end">
-            <div className="flex flex-col items-center mt-2">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-2 flex items-center justify-center bg-white">
-              <img src="/images/next.png" width="32px" alt="" className="mx-2" />
-            </div>
-            <div className="mt-2 text-center italiana text-[25px]">
-              About Me
-            </div>
-            </div>
-            </div>
-          </div>
+     
+         
+            
+            {/* <div className="flex flex-col items-center mt-2 bg-sky-500">
+              <div className="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full border-white bg-white">
+                <img src="/images/next.png" alt="" className="max-w-[32px] min-w-[32px]" />
+              </div>
+              <div className="mt-2 text-center italiana text-[24px]">
+                About Me
+              </div>
+            </div> */}
           
-        </div>
+         
+            <div className="mt-[40px] items-center sm:mt-[-200px]">
+  <div className="max-w-screen-lg sm:max-w-screen-lg  ">
+    <div className="flex flex-col items-center mt-2">
+      <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-2 flex items-center justify-center bg-white">
+        <img src="/images/next.png" width="32px" alt="" className="mx-2 animate-bounce" />
+      </div>
+      <div className="mt-2 text-center italiana text-[25px] font-semibold">About Me</div>
+    </div>
+  </div>
+</div>
+       
         
       </div>
 
 
+      <div className="max-w-screen-lg mx-auto flex justify-center mt-20">
+    <div className="flex items-center mt-4">
+      <img src="/images/instagram.png" width="32px" alt="" className="mx-2" />
+      <img src="/images/facebook.png" width="32px" alt="" className="mx-2" />
+      <img src="/images/github.png" width="32px" alt="" className="mx-2" />
+      <img src="/images/linkedin.png" width="32px" alt="" className="mx-2" />
+      <a href="mailto:bayyartalha@gmail.com?subject=Konu&body=İçerik"><img src="/images/email.png" width="32px" alt="" className="mx-2" /></a>
     </div>
+
+  </div> 
+
+
+    </>
 
   );
 }
@@ -105,4 +128,7 @@ export default Home;
       <img src="/images/linkedin.png" width="32px" alt="" className="mx-2" />
       <a href="mailto:bayyartalha@gmail.com?subject=Konu&body=İçerik"><img src="/images/email.png" width="32px" alt="" className="mx-2" /></a>
     </div>
-  </div> */}
+
+  </div> 
+
+*/}

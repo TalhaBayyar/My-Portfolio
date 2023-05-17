@@ -3,6 +3,7 @@ import Home from "./Components/Home"
 import Portfolio from "./Components/Portfolio"
 import About from "./Components/Portfolio/About"
 import Navbar from "./Components/Navbar"
+import Footer from "./Components/Footer"
 function App() {
 
   return (

@@ -13,3 +13,20 @@
 .aboutbg{
   background-color: #F6F5F1;
 }
+
+@keyframes slowOpen {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slowOpen {
+  animation-name: slowOpen;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+
+}
+

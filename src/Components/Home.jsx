@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import Footer from './Footer';
 
 function Home() {
   const textRef = useRef(null);
@@ -37,13 +38,13 @@ function Home() {
       <div className='flex justify-center items-center max-w-screen-xl mx-auto'>
 
       
-        <div className="min-w-[252px] max-w-[252px] min-h-[282px] max-h-[282px] md:min-w-[402px] md:max-w-[402px] md:min-h-[432px] md:max-h-[432px]">
-          <img src="/images/talha-bayyar.jpg" alt="" className="object-cover drop-shadow-md" />
+        <div className="min-w-[202px] max-w-[202px] min-h-[232px] max-h-[232px] md:min-w-[402px] md:max-w-[402px] md:min-h-[432px] md:max-h-[432px]">
+          <img src="/images/talha-bayyar.jpg" alt="" className="object-cover drop-shadow-2xl rounded-lg" />
         </div>
 
-        <div className="mr-[225px] ms:mr-[215px] md:mr-[360px] xl:mr-[370px] fixed flex justify-center items-center italiana font-semibold text-2xl xl:text-4xl">
+        <div className="mr-[190px] ms:mr-[215px] md:mr-[360px] xl:mr-[370px] absolute flex justify-center items-center italiana font-semibold text-[20px] xl:text-4xl">
           <div ref={textRef}>HI I'M</div>
-          <div className="flex items-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-[1px] border-x-slate-500 border-y-slate-500" ref={textRef}></div>
+          <div className="flex items-center w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-[1px] border-x-slate-400 border-y-slate-400" ref={textRef}></div>
         </div> 
         
       </div>
@@ -81,7 +82,7 @@ function Home() {
       </div>
 
 
-      <div className="max-w-screen-lg mx-auto flex justify-center mt-20">
+      <div className="max-w-screen-lg mx-auto flex justify-center mt-10 sm:mt-40">
     <div className="flex items-center mt-4">
       <img src="/images/instagram.png" width="32px" alt="" className="mx-2" />
       <img src="/images/facebook.png" width="32px" alt="" className="mx-2" />
@@ -89,10 +90,10 @@ function Home() {
       <img src="/images/linkedin.png" width="32px" alt="" className="mx-2" />
       <a href="mailto:bayyartalha@gmail.com?subject=Konu&body=İçerik"><img src="/images/email.png" width="32px" alt="" className="mx-2" /></a>
     </div>
-
+    
   </div> 
 
-
+  <Footer />
     </>
 
   );

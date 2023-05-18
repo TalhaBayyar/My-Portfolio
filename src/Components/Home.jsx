@@ -35,10 +35,10 @@ function Home() {
       </div>
 
 
-      <div className='flex justify-center items-center max-w-screen-xl mx-auto'>
+      <div className='flex justify-center items-center max-w-screen-xl mx-auto '>
 
       
-        <div className="min-w-[202px] max-w-[202px] min-h-[232px] max-h-[232px] md:min-w-[402px] md:max-w-[402px] md:min-h-[432px] md:max-h-[432px]">
+        <div className="relative min-w-[202px] max-w-[202px] min-h-[232px] max-h-[232px] md:min-w-[402px] md:max-w-[402px] md:min-h-[432px] md:max-h-[432px]">
           <img src="/images/talha-bayyar.jpg" alt="" className="object-cover drop-shadow-2xl rounded-lg" />
         </div>
 
@@ -56,18 +56,10 @@ function Home() {
 
      
          
-            
-            {/* <div className="flex flex-col items-center mt-2 bg-sky-500">
-              <div className="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full border-white bg-white">
-                <img src="/images/next.png" alt="" className="max-w-[32px] min-w-[32px]" />
-              </div>
-              <div className="mt-2 text-center italiana text-[24px]">
-                About Me
-              </div>
-            </div> */}
+          
           
          
-            <div className="mt-[40px] items-center sm:mt-[-200px]">
+            <div className="mt-[80px] items-center sm:mt-[-200px]">
   <div className="max-w-screen-lg sm:max-w-screen-lg  ">
     <div className="flex flex-col items-center mt-2">
       <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-2 flex items-center justify-center bg-white">
@@ -82,16 +74,7 @@ function Home() {
       </div>
 
 
-      <div className="max-w-screen-lg mx-auto flex justify-center mt-10 sm:mt-40">
-    <div className="flex items-center mt-4">
-      <img src="/images/instagram.png" width="32px" alt="" className="mx-2" />
-      <img src="/images/facebook.png" width="32px" alt="" className="mx-2" />
-      <img src="/images/github.png" width="32px" alt="" className="mx-2" />
-      <img src="/images/linkedin.png" width="32px" alt="" className="mx-2" />
-      <a href="mailto:bayyartalha@gmail.com?subject=Konu&body=İçerik"><img src="/images/email.png" width="32px" alt="" className="mx-2" /></a>
-    </div>
-    
-  </div> 
+      
 
   <Footer />
     </>

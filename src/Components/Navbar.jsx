@@ -5,10 +5,18 @@ import "../App.css"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+
+
   const handleMenuClick = () => {
     setIsOpen(!isOpen);
-  };
+    console.log("click :" + isOpen)
+  }
 
+
+  
+ 
+  
+  
   return (
     <header className='mt-8'>
       
@@ -16,7 +24,10 @@ function Navbar() {
 
         <div className='hidden sm:block'>
           <div className="flex items-center">
+           
+            <div className="">
             <Link className='italiana text-sm lg:text-[20px] font-semibold' to="/">Home</Link>
+            </div>
             <div className="ml-4 sm:ml-6">
               <Link className='italiana text-sm lg:text-[20px] font-semibold' to="/about">About</Link>
             </div>
@@ -54,7 +65,7 @@ function Navbar() {
         
 
       {isOpen && (
-        <div className={`block sm:hidden overflow-hidden top-20 right-0 transform ${isOpen ? 'animate-slowOpen' : ''} transition-transform duration-300`} style={{position: 'absolute', zIndex: 2}}>
+        <div className={`block bg-sky-500 sm:hidden overflow-hidden top-20 right-0 transform ${isOpen ? 'animate-slowOpen' : ''} transition-transform duration-300`} style={{position: 'absolute', zIndex: 2}}>
           <div className="ml-6">
             <Link className='block px-2 py-1 italiana' to="/">Home</Link>
           </div>
@@ -70,7 +81,7 @@ function Navbar() {
           
           <div className="transition-all duration-500 ease-in-out transform origin-top ml-6">
               <svg className="w-6 h-6 text-gray-700 lg:hidden cursor-pointer" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M14.293 5.293a1 1 0 00-1.414-1.414L10 8.586 6.707 5.293a1 1 0 10-1.414 1.414l3.999 3.999a1 1 0 001.414 0l3.999-3.999a1 1 0 000-1.414z" clip-rule="evenodd" />
+                <path fillRule="evenodd" d="M14.293 5.293a1 1 0 00-1.414-1.414L10 8.586 6.707 5.293a1 1 0 10-1.414 1.414l3.999 3.999a1 1 0 001.414 0l3.999-3.999a1 1 0 000-1.414z" clipRule="evenodd" />
               </svg>
             </div>
         </div>

@@ -7,7 +7,7 @@ import Footer from "./Components/Footer"
 function App() {
 
   return (
-    <>
+    <div className="">
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -15,8 +15,9 @@ function App() {
           <Route path="/Portfolio" element={<Portfolio />} />
           
       </Routes>
+      <Footer />
       
-    </>
+    </div>
   )
 }
 

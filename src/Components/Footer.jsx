@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer className='bottom-0 w-full'>
       <div className="max-w-screen-lg mx-auto flex justify-center mt-10 sm:mt-40 md:mt-44 mb-10">
-        <div className="flex items-center mt-4">
+        <div className="flex items-center mt-4 bg-none">
           <a href="https://www.instagram.com/tlhabyr/" target='blank'>
             <img src="/images/instagram.png" width="32px" alt="instagram" className="mx-2 hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75" />
           </a>

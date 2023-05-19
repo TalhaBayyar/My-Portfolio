@@ -26,23 +26,23 @@ function Navbar() {
           <div className="flex items-center">
            
             <div className="">
-            <Link className='italiana text-sm lg:text-[20px] font-semibold' to="/">Home</Link>
+            <Link className='italiana text-sm lg:text-[20px] font-semibold  hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/">Home</Link>
             </div>
             <div className="ml-4 sm:ml-6">
-              <Link className='italiana text-sm lg:text-[20px] font-semibold' to="/about">About</Link>
+              <Link className='italiana text-sm lg:text-[20px] font-semibold hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/about">About</Link>
             </div>
             <div className="ml-4 sm:ml-6">
-              <Link className='italiana text-sm lg:text-[20px] font-semibold' to="/portfolio">Portfolio</Link>
+              <Link className='italiana text-sm lg:text-[20px] font-semibold hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/portfolio">Portfolio</Link>
             </div>
           </div>
         </div>
         
         <div className="flex-grow text-center">
-          <Link className='ml-6 sm:mr-16 md:mr-20 xl:mr-20 2xl:mr-20 text-[30px] lg:text-[48px] redressed' to="/">Talha Bayyar</Link>
+          <Link className='ml-6 sm:mr-16 md:mr-20 xl:mr-20 2xl:mr-20 text-[30px] lg:text-[48px] redressed hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/">Talha Bayyar</Link>
         </div>
 
         <div className="ml-6 hidden sm:block">
-          <Link to="/Talha-Bayyar.pdf" target="_blank" download className='italiana text-sm lg:text-[20px] font-semibold'>Download CV</Link>
+          <Link to="/Talha-Bayyar.pdf" target="_blank" download className='italiana text-sm lg:text-[20px] font-semibold hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75'>Download CV</Link>
         </div>
 
         <div className="flex items-center">
@@ -67,16 +67,16 @@ function Navbar() {
       {isOpen && (
         <div className={`block bg-sky-500 sm:hidden overflow-hidden top-20 right-0 transform ${isOpen ? 'animate-slowOpen' : ''} transition-transform duration-300`} style={{position: 'absolute', zIndex: 2}}>
           <div className="ml-6">
-            <Link className='block px-2 py-1 italiana' to="/">Home</Link>
+            <Link className='block px-2 py-1 italiana hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/">Home</Link>
           </div>
           <div className="ml-6">
-            <Link className='block px-2 py-1  italiana' to="/about">About</Link>
+            <Link className='block px-2 py-1 italiana hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/about">About</Link>
           </div> 
           <div className="ml-6">
-            <Link className='block px-2 py-1  italiana' to="/portfolio">Portfolio</Link>
+            <Link className='block px-2 py-1 italiana hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/portfolio">Portfolio</Link>
           </div>
           <div className="ml-6">
-            <Link className='block px-2 py-1  italiana ' to="/">Download CV</Link>
+          <Link to="/Talha-Bayyar.pdf" target="_blank" download className='block px-2 py-1 italiana hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75'>Download CV</Link>
           </div>
           
           <div className="transition-all duration-500 ease-in-out transform origin-top ml-6">

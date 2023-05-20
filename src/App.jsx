@@ -14,8 +14,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
           
+          
       </Routes>
-      <Footer />
+      
       
     </div>
   )

@@ -18,7 +18,7 @@ function Navbar() {
   
   
   return (
-    <header className='mt-8'>
+    <header className='mt-8 header'>
       
       <nav className="flex justify-between items-center max-w-screen-xl mx-auto">
 

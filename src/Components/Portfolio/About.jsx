@@ -32,7 +32,7 @@ const About = () => {
 
   return (
     <>
-      <div className='flex justify-start items-center max-w-screen-xl mx-auto mt-20'> </div>
+      <div className='flex justify-start items-center max-w-screen-xl mx-auto mt-40'> </div>
 
       <div className='flex justify-center items-center max-w-screen-xl mx-auto'>
         <div className="relative min-w-[202px] max-w-[202px] min-h-[232px] max-h-[232px] md:min-w-[402px] md:max-w-[402px] md:min-h-[432px] md:max-h-[432px]">
@@ -40,26 +40,26 @@ const About = () => {
           <div className="absolute inset-0 flex justify-center items-center" >
             <h2 className="text-[#B9B9B9] text-[40px] md:text-[80px] italiana mt-20 md:mt-40 typed"></h2>
           </div>
-          <div className='absolute sm:right-0 sm:bottom-0 mr-[130px] mt-[10px] sm:mr-[630px] min-w-[200px] max-w-[200px] max-h-[200px] min-h-[200px]'>
+          <div className='absolute sm:right-0 bg-red-500 sm:bg-sky-500 md:bg-orange-500 sm:bottom-0 mr-[130px] mb-[20px] sm:mr-[630px] min-w-[200px] max-w-[200px] max-h-[200px] min-h-[200px]'>
             <div className="flex justify-between items-center max-w-screen-lg mx-auto ">
               <div className="flex items-center">
                 <div className="max-w-sm mx-auto italiana">
-                  <div className=" text-1xl flex drop-shadow-lg font-semibold ">
+                  <div className="text-xl flex drop-shadow-lg font-semibold ">
                     <button
                       
-                      className={` ${activeTab === 'education' ? 'drop-shadow-lg' : ''} animate-bounce`}
+                      className={` ${activeTab === 'education' ? 'drop-shadow-lg' : ''} animate-bounce hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75`}
                       onClick={() => handleTabClick('education')}
                     >
                       Education
                     </button>
                     <button
-                      className={`py-2 px-4 ${activeTab === 'workExperience' ? 'drop-shadow-lg' : ''}`}
+                      className={`py-2 px-4 ${activeTab === 'workExperience' ? 'drop-shadow-lg' : ''} hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75`}
                       onClick={() => handleTabClick('workExperience')}
                     >
                       Work Experience
                     </button>
                     <button
-                      className={`py-2 ${activeTab === 'skills' ? 'drop-shadow-lg' : ''}`}
+                      className={`py-2 ${activeTab === 'skills' ? 'drop-shadow-lg' : ''} hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75`}
                       onClick={() => handleTabClick('skills')}
                     >
                       Skills

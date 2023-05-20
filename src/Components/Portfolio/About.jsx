@@ -40,20 +40,20 @@ const About = () => {
           <div className="absolute inset-0 flex justify-center items-center" >
             <h2 className="text-[#B9B9B9] text-[40px] md:text-[80px] italiana mt-20 md:mt-40 typed"></h2>
           </div>
-          <div className='absolute sm:right-0 bg-red-500 sm:bg-sky-500 md:bg-orange-500 sm:bottom-0 mr-[130px] mb-[20px] sm:mr-[630px] min-w-[200px] max-w-[200px] max-h-[200px] min-h-[200px]'>
-            <div className="flex justify-between items-center max-w-screen-lg mx-auto ">
+          <div className='absolute sm:right-0 sm:bottom-0 mb-[-30px] mr-[130px] sm:mr-[630px] min-w-[200px] max-w-[200px] max-h-[200px] min-h-[200px]'>
+            <div className="flex justify-between items-center max-w-screen-lg mx-auto">
               <div className="flex items-center">
                 <div className="max-w-sm mx-auto italiana">
-                  <div className="text-xl flex drop-shadow-lg font-semibold ">
+                  <div className=" text-sm md:text-md flex drop-shadow-lg font-semibold">
                     <button
                       
-                      className={` ${activeTab === 'education' ? 'drop-shadow-lg' : ''} animate-bounce hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75`}
+                      className={` ${activeTab === 'education' ? 'drop-shadow-lg' : ''} hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75`}
                       onClick={() => handleTabClick('education')}
                     >
                       Education
                     </button>
                     <button
-                      className={`py-2 px-4 ${activeTab === 'workExperience' ? 'drop-shadow-lg' : ''} hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75`}
+                      className={`py-2 px-2 ${activeTab === 'workExperience' ? 'drop-shadow-lg' : ''} hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75`}
                       onClick={() => handleTabClick('workExperience')}
                     >
                       Work Experience

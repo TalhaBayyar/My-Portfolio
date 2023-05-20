@@ -27,7 +27,7 @@ function Portfolio() {
   const selectedProjects = ['Weather-App'];
   const selectedProjectsTwo = ['React-Todos-App']
   const selectedProjectsThree = ['Instagram-Demo']
-  const selectedProjectsFour = ['Linkedin-Demo']
+  const selectedProjectsFour = ['My-Portfolio']
  
   return (
     <div className='mt-40'>
@@ -166,10 +166,11 @@ function Portfolio() {
 <div className="w-full lg:w-1/2">
   <div className="h-full">
     <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 h-full">
-    <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg relative min-w-[202px] max-w-[202px] min-h-[232px] max-h-[232px] md:min-w-[352px] md:max-w-[352px] md:min-h-[332px] md:max-h-[332px]" src="/images/strett.jpg" alt="" />
-    <div>
+    <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg relative min-w-[202px] max-w-[202px] min-h-[232px] max-h-[232px] md:min-w-[352px] md:max-w-[352px] md:min-h-[332px] md:max-h-[332px]" src="/images/Talha-Bayyar-Full-Screen.png" alt="" />
+      <div className="flex flex-col justify-between p-4 leading-normal">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><div>
   {Array.isArray(projects) && projects
-    .filter(project => selectedProjects.includes(project.name))
+    .filter(project => selectedProjectsFour.includes(project.name))
     .map((project) => (
       <div key={project.id}>
         <Link to={project.html_url} target="_blank" className='bg-sky-500'>
@@ -177,10 +178,15 @@ function Portfolio() {
         </Link>
       </div>
     ))}
-</div>
+</div></h5>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        
+      </div>
     </a>
   </div>
 </div>
+
+
 
 
 </nav>

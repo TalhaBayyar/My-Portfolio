@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className='bottom-0 w-full fixed'>
+    <footer className=''>
       <div className="max-w-screen-lg mx-auto flex justify-center mt-10 sm:mt-40 md:mt-44 mb-10">
         <div className="flex items-center mt-4">
           <a href="https://www.instagram.com/tlhabyr/" target='blank'>

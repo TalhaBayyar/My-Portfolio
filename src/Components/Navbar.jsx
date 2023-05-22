@@ -65,7 +65,7 @@ function Navbar() {
         
 
       {isOpen && (
-        <div className={`block bg-sky-500 sm:hidden overflow-hidden top-20 right-0 transform ${isOpen ? 'animate-slowOpen' : ''} transition-transform duration-300`} style={{position: 'absolute', zIndex: 2}}>
+        <div className={`block sm:hidden overflow-hidden top-20 right-0 transform ${isOpen ? 'animate-slowOpen' : ''} transition-transform duration-300`} style={{position: 'absolute', zIndex: 2}}>
           <div className="ml-6">
             <Link className='block px-2 py-1 italiana hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/">Home</Link>
           </div>

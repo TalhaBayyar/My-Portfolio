@@ -3,6 +3,7 @@ import Education from "./Background/Education"
 import Skills from "./Background/Skills"
 import WorkExperience from "./Background/WorkExperience"
 import Typed from 'typed.js';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('education');
@@ -78,14 +79,16 @@ const About = () => {
       </div>
       <div className='flex justify-center sm:justify-end items-center max-w-screen-xl mx-auto border-4'>
         <div className="mt-[250px] items-center sm:mt-[-200px]">
-          <div className="max-w-screen-lg sm:max-w-screen-lg  ">
-            <div className="flex flex-col items-center mt-2">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-2 flex items-center justify-center bg-white">
-                <img src="/images/next.png" width="32px" alt="" className="mx-2 animate-bounce" />
+        <Link className='italiana hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/portfolio">
+            <div className="max-w-screen-lg sm:max-w-screen-lg  ">
+              <div className="flex flex-col items-center mt-2">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-2 flex items-center justify-center bg-white">
+                  <img src="/images/next.png" width="32px" alt="" className="mx-2 animate-bounce" />
+                </div>
+                <div className="mt-2 text-center italiana text-[25px] font-semibold">me portfolio</div>
               </div>
-              <div className="mt-2 text-center italiana text-[25px] font-semibold">me portfolio</div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </>

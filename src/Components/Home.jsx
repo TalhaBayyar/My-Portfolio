@@ -41,7 +41,7 @@ function Home() {
             <Link className='italiana hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75' to="/about">
               <div className="flex flex-col items-center mt-2">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-2 flex items-center justify-center bg-white">
-                  <img src="/images/next.png" width="32px" alt="" className="mx-2 animate-bounce" />
+                  <img src="/images/next.png" width="32px" alt="" className="mx-2 animate-bounce"/>
                 </div>
                 <div className="mt-2 text-center italiana text-[25px] font-semibold">
                   About Me

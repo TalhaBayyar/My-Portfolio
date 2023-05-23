@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className=''>
-      <div className="max-w-screen-lg mx-auto flex justify-center mt-10 sm:mt-40 md:mt-44 mb-10">
+    <footer className=' '>
+      <div className="max-w-screen-lg mx-auto flex justify-center">
         <div className="flex items-center mt-4">
           <a href="https://www.instagram.com/tlhabyr/" target='blank'>
             <img src="/images/instagram.png" width="32px" alt="instagram" className="mx-2 hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75" />
@@ -21,14 +21,7 @@ function Footer() {
         </div>
       </div> 
 
-      <div className="flex justify-center items-center">
-        <div className="flex items-center">
-          <img src="/images/copyright.png" width="20px" alt="copyright" />
-          <div className='flex'>
-            <p className="italiana font-semibold text-sm sm:text-xl">Talha Bayyar Her Hakkı Saklıdır</p>
-          </div>
-        </div>
-      </div>
+     
     </footer>
   )
 }

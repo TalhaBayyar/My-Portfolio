@@ -89,7 +89,7 @@ function Portfolio() {
                   <a href="https://github.com/TalhaBayyar" target='blank'>
                     <img src="/images/github.png" width="32px" alt="github" className="animate-bounce mx-2 hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75" />
                   </a>
-                  <a href="https://color-picture.vercel.app/" target='blank'>
+                  <a href="https://color-picture-gbpe.vercel.app/" target='blank'>asdas
                     <img src="/images/live.png" width="32px" alt="github" className="animate-bounce mx-2 hover:cursor-pointer hover:opacity-50 focus:outline-none focus:opacity-75" />
                   </a>
                 </div>
